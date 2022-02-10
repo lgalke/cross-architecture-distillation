@@ -1,0 +1,20 @@
+{
+	"mode": "hybrid",
+	"initializer_mode": "noisy-identity",
+	"initializer_range": 0.01,
+	"vocab_size": 30522,
+	"root_mat_size": 20,
+	"text_classifier": "mlp",
+	"embedding_size": 400,
+	"embd_pdrop": 0.0,
+	"hidn_pdrop": 0.0,
+	"conv_stride": 0,
+	"conv_kernel": 0,
+	"conv_layers": 1,
+	"output_hidden_states": true,
+	"pad_token_id": 0,
+	"layernorm": false
+}
+
+
+

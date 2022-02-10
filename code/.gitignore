@@ -1,0 +1,13 @@
+.vscode
+cola_public
+.env
+venv
+.idea
+*__pycache__*
+*/.DS_STORE
+slurm*
+seq2mat/models/
+
+job.sh
+job_distil.sh
+out.txt

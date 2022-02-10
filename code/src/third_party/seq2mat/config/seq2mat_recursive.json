@@ -1,0 +1,27 @@
+{
+	"mode": "recursive",
+	"vocab_size": 30522,
+	"embedding_size": 64,
+	"root_mat_size": 64,
+	"low_rank_approx": 3,
+	"rec_iter": 6,
+	"embd_pdrop": 0.0,
+	"hidn_pdrop": 0.0,
+	"attn_pdrop": 0.0,
+	"conv_stride": 1,
+	"conv_kernel": 3,
+	"conv_layers": 6,
+	"initializer_range": 0.01,
+	"output_hidden_states": true,
+	"pad_token_id": 0,
+	"layernorm": false,
+	"intermediate_mlp": false,
+	"attention": false,
+	"activation": "relu",
+	"tied_weights": true,
+	"skip_connections": false,
+	"jumping_knowledge": false
+}
+
+
+

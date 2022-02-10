@@ -1,0 +1,141 @@
+Loading pretrained model from: zoo/seq2mat_6layer_layernorm using config: Seq2matConfig {
+  "_hidden_size": 400,
+  "activation": null,
+  "conv_kernel": 3,
+  "conv_layers": 6,
+  "conv_stride": 1,
+  "embd_pdrop": 0.1,
+  "hidn_pdrop": 0.1,
+  "id2label": {},
+  "initializer_mode": "noisy-identity",
+  "initializer_range": 0.01,
+  "jumping_knowledge": false,
+  "label2id": {},
+  "layernorm": true,
+  "mode": "conv",
+  "model_type": "seq2mat",
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "root_mat_size": 20,
+  "skip_connections": false,
+  "text_classifier": "linear",
+  "vocab_size": 30522
+}
+
+Loading Seq2mat model
+init linear or embedding
+init matrix embedding
+Embedding size torch.Size([30522, 400])
+init layernorm
+init layernorm
+init layernorm
+init layernorm
+init layernorm
+init layernorm
+init layernorm
+init layernorm
+Seq2matModel(
+  (embeddings): Seq2matEmbeddings(
+    (matrix_embedding): Seq2matMatrixEmbedding(
+      (embedding): Embedding(30522, 400)
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (layernorm): LayerNorm((20, 20), eps=1e-05, elementwise_affine=True)
+  )
+  (encoder): Seq2matEncoder(
+    (layers): ModuleList(
+      (0): Seq2matLayer(
+        (dropout): Dropout(p=0.1, inplace=False)
+        (layernorm): LayerNorm((20, 20), eps=1e-05, elementwise_affine=True)
+      )
+      (1): Seq2matLayer(
+        (dropout): Dropout(p=0.1, inplace=False)
+        (layernorm): LayerNorm((20, 20), eps=1e-05, elementwise_affine=True)
+      )
+      (2): Seq2matLayer(
+        (dropout): Dropout(p=0.1, inplace=False)
+        (layernorm): LayerNorm((20, 20), eps=1e-05, elementwise_affine=True)
+      )
+      (3): Seq2matLayer(
+        (dropout): Dropout(p=0.1, inplace=False)
+        (layernorm): LayerNorm((20, 20), eps=1e-05, elementwise_affine=True)
+      )
+      (4): Seq2matLayer(
+        (dropout): Dropout(p=0.1, inplace=False)
+        (layernorm): LayerNorm((20, 20), eps=1e-05, elementwise_affine=True)
+      )
+      (5): Seq2matLayer(
+        (dropout): Dropout(p=0.1, inplace=False)
+        (layernorm): LayerNorm((20, 20), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (pooler): Seq2matPooler(
+    (layernorm): LayerNorm((20, 20), eps=1e-05, elementwise_affine=True)
+  )
+)
+Frob norm of pad token: 4.3853
+#### Layer 0 ####
+	- Frobenius Norm
+		Mean = 18.7004 (SD = 1.3931)
+		Quartiles: (14.92, 17.70, 18.59, 19.47, 23.21)
+	- Determinants
+		Mean = 29397.4570 (SD = 286605.5938)
+		Quartiles: (-1488545.50, -49389.47, -3394.60, 27384.57, 3482686.25)
+################################
+#### Layer 1 ####
+	- Frobenius Norm
+		Mean = 18.3713 (SD = 0.6718)
+		Quartiles: (16.03, 17.91, 18.36, 18.84, 21.05)
+	- Determinants
+		Mean = 21.5107 (SD = 133.1675)
+		Quartiles: (-3395.86, -8.38, 0.42, 12.78, 4761.31)
+################################
+#### Layer 2 ####
+	- Frobenius Norm
+		Mean = 11.0597 (SD = 0.1878)
+		Quartiles: (10.79, 10.96, 11.01, 11.09, 13.15)
+	- Determinants
+		Mean = 0.0003 (SD = 0.0253)
+		Quartiles: (-1.23, -0.00, 0.00, 0.00, 0.93)
+################################
+#### Layer 3 ####
+	- Frobenius Norm
+		Mean = 9.8772 (SD = 0.7923)
+		Quartiles: (8.90, 9.37, 9.60, 10.11, 17.36)
+	- Determinants
+		Mean = 0.0000 (SD = 0.0000)
+		Quartiles: (-0.00, -0.00, 0.00, 0.00, 0.00)
+################################
+#### Layer 4 ####
+	- Frobenius Norm
+		Mean = 10.7766 (SD = 0.9247)
+		Quartiles: (9.19, 10.26, 10.57, 10.96, 15.92)
+	- Determinants
+		Mean = 0.0117 (SD = 0.3109)
+		Quartiles: (-10.31, -0.04, 0.00, 0.05, 21.21)
+################################
+#### Layer 5 ####
+	- Frobenius Norm
+		Mean = 12.9126 (SD = 1.0003)
+		Quartiles: (10.13, 12.20, 12.87, 13.53, 18.31)
+	- Determinants
+		Mean = 330.9456 (SD = 3553.7258)
+		Quartiles: (-106631.19, -320.37, 30.12, 555.28, 137251.89)
+################################
+#### Layer 6 ####
+	- Frobenius Norm
+		Mean = 97.6675 (SD = 10.9518)
+		Quartiles: (57.53, 89.70, 98.19, 105.67, 141.17)
+	- Determinants
+		Mean = -121821915512832.0000 (SD = 6325629444161536.0000)
+		Quartiles: (-629452402398855168.00, -58116153344.00, -53723188.00, 50846879744.00, 591978709662040064.00)
+################################
+#### Layer pooled ####
+	- Frobenius Norm
+		Mean = 38.7539 (SD = 8.5344)
+		Quartiles: (20.52, 32.53, 37.30, 43.58, 78.29)
+	- Determinants
+		Mean = -5653289.5000 (SD = 9974356992.0000)
+		Quartiles: (-551549927424.00, -152069544.00, 164478.26, 168774724.00, 221741105152.00)
+################################

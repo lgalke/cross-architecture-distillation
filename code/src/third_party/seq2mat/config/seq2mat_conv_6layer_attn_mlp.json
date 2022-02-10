@@ -1,0 +1,23 @@
+{
+	"mode": "conv",
+	"vocab_size": 30522,
+	"root_mat_size": 20,
+	"embd_pdrop": 0.1,
+	"hidn_pdrop": 0.1,
+	"attn_pdrop": 0.1,
+	"conv_stride": 1,
+	"conv_kernel": 3,
+	"conv_layers": 6,
+	"initializer_range": 0.01,
+	"output_hidden_states": true,
+	"pad_token_id": 0,
+	"layernorm": true,
+	"intermediate_mlp": true,
+	"attention": true,
+	"activation": null,
+	"skip_connections": true,
+	"jumping_knowledge": false
+}
+
+
+

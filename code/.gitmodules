@@ -1,0 +1,6 @@
+[submodule "third_party/word2mat"]
+	path = src/third_party/word2mat
+	url = https://github.com/florianmai/word2mat
+[submodule "third_party/seq2mat"]
+	path = src/third_party/seq2mat
+	url = https://github.com/lgalke/seq2mat.git

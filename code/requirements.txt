@@ -1,0 +1,13 @@
+torch
+numpy
+pandas
+matplotlib
+transformers==4.2.2
+argparse
+gitpython
+datasets
+cython
+scipy
+scikit-learn
+python-dotenv
+comet-ml
