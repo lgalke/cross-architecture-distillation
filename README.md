@@ -1,6 +1,7 @@
-# Supplementary Material for IJCNN submission number 2202
+# General Cross-Architecture Distillation of Pretrained Language Models into Matrix Embeddings
 
-*General Cross-Architecture Distillation of Pretrained Language Models into Matrix Embeddings*
+This repository holds supplementary data for paper "General Cross-Architecture Distillation of Pretrained Language Models into Matrix Embeddings", IJCNN 2022.
+
 
 - [Supplementary Material](./supplementary-material.pdf)
 - [Code](./code) 
